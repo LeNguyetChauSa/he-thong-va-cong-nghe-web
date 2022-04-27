@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="../css/bootstrap.min.css"></script> -->
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="../hinh/logo.PNG" alt="">
+                </div>
+                <div class="col-md-9 text-center bg-info">
+                    <h3 class="text-uppercase">truong dai hoc cong nghiep thanh pho ho chi minh</h3>
+                    <h4 class="text-uppercase text-danger">khoa cong nghe thong tin</h4>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div>
+                <h3>Tabs With Dropdown Menu</h3>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ĐOÀN THỂ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SỰ KIỆN</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">HOẠT ĐỘNG</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÍ</a>
+                            </li>
+                            <li><a href="#">THAM GIA</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <img src="../hinh/ngayhoithanhnien.JPG" alt="" width="" style="border-radius: 50%;" />
+            </div>
+            <div class="col-md-9">
+                <ol type="I">
+                    <h2 style="color: chocolate;">TIN NỔI BẬT</h2>
+                    <li>Mùa hè xanh</li>
+                    <li>Thanh niên tình nguyện</li>
+                    <li>Tấm lòng vàng</li>
+                    <li>Hiến máu nhân đạo </li>
+                    <li>Bảo vệ môi trường sạch</li>
+                    <li>Thi đua lập thành tích chào mừng 26/3</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class=" col-md-12 ">
+            <h4 class="text-center text-uppercase ">DANH SÁCH ĐĂNG KÍ HOẠT ĐỘNG MÙA HÈ XANH</h4>
+            <table class="table table-striped " role="table " id="danhSach ">
+                <tr>
+                    <th>STT</th>
+                    <th>Ma SV</th>
+                    <th>Tên SV</th>
+                    <th>Ngày tham gia</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                </tr>
+            </table>
+        </div>
+        <!-- end table -->
+        <!-- begin footer  -->
+        <footer class="bg-primary p-2 ">
+            <div class="col-md-12 mt-3 ">
+                <div class="text-right text-white " style="text-align: right;">
+                    <p>@ 2021-2022 Đoàn Thanh Niên -Trường đại học Công Nghiệp TP.HCM
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Thông tin cá nhân</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <form action="# " method="get " class="form-horizontal ">
+                            <div class="form-group ">
+                                <label for="maSV " class="control-label ">Mã Sinh Viên</label>
+                                <input type="text " class="form-control " id="maSV " placeholder="Ma SV ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="hoTen " class="control-label ">Ho Ten</label>
+                                <input type="text " class="form-control " id="hoTen " placeholder="Ho Ten ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="ntt ">Ngay tham gia</label>
+                                <input type="date " class="form-control " id="ntt " placeholder="Nhap ngay tap trung ">
+                                <p class="text-danger " id="tbNtt ">*</p>
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="email " class="control-label ">Email</label>
+                                <input type="email " class="form-control " id="email " placeholder="Email ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="sdt ">Số điện thoại</label>
+                                <input type="text " class="form-control " id="sdt " placeholder="Nhap so dien thoai ">
+                                <p class="text-danger " id="tbSdt ">*</p>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-primary btn-block " id="btnSubmit " data-dismiss="modal " style="background-color: pink;">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
+
+        function checkMaSV() {
+            var maSV = $('#maSV').val();
+            var reg = /^[1-9]{1}[0-9]{9}$/
+            if (reg.test(maSV)) {
+                alert("Ban nhap dung ")
+            } else
+                alert("Ban nhap sai ")
+        }
+        $('#maSV').blur(checkMaSV)
+
+        function checkHoTen() {
+            var hoTen = $('#hoTen').val();
+            var reg = /^[A-Z]+[A-Za-z]*(\s*[A-Z][A-Za-z]*)*$/
+            if (reg.test(hoTen)) {
+                alert("Ban nhap dung ")
+            } else
+                alert("Ban nhap sai ")
+        }
+        $('#hoTen').blur(checkHoTen)
+
+        function checkDate() {
+            if ($("#ntt").val() == "") {
+                $('#tbNtt').html("Khong de trong");
+                return false
+            }
+            var today = new Date();
+            var ntt = new Date($('#ntt').val());
+            today = today.setDate(today.getDate() + 7);
+            if (today > ntt) {
+                $('#tbNtt').html("Ngay tap trung phai sau ngay hien tai 7 ngay");
+                return false
+            }
+            $('#tbNtt').html('*')
+            return true
+        }
+        $('#ntt').blur(checkDate)
+
+        function checkMail() {
+            reg = /@(iuh.edu.vn)$/
+            var email = $('#email').val();
+            if (reg.test(email)) {
+                alert("Ban nhap dung ")
+            } else
+                alert("Ban nhap sai ")
+        }
+        $('#email').blur(checkMail)
+
+        function checkSDT() {
+            let re = /^0\d{3}-\d{3}-\d{4}$/
+            if ($('#sdt').val() == "") {
+                $('#tbSdt').html("Khong de trong");
+                return false
+            }
+            if (!re.test($('#sdt').val())) {
+                $('#tbSdt').html("SDT khong dung dinh dang");
+                return false
+            }
+            $('#tbSdt').html('*')
+            return true
+        }
+        $('#sdt').blur(checkSDT)
+        $('#btnSubmit').click(function() {
+            if (checkDate() && checkHoTen() && checkHoTen() && checkDate() && checkMaSV()) {
+                row = "<tr>"
+                row += "<th>" + i++ + "</th>"
+                row += "<th>" + $("#name").val() + "</th>"
+                row += "<th>" + $("#ao").val() + "</th>"
+                row += "<th>" + $("#dc").val() + "</th>"
+                row += "<th>" + $("#ntt").val() + "</th>"
+                row += "<th>" + $("#sdt").val() + "</th>"
+                row += "<th>" + $("#avt").val() + "</th>"
+                row += "</tr>"
+                $('#danhSach').append(row)
+            }
+
+        })
+    })
+</script>
+
+</html>
